@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The band</title>
     <link rel="icon" href="./assets/shorticon.jpg" type="image/x-icon" />
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
     <div id="main">
@@ -19,7 +20,7 @@
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         More
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
@@ -34,6 +35,10 @@
             <!-- Begin search -->
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
             </div>
 
             <!-- End search -->
@@ -227,6 +232,28 @@
         modalContainer.addEventListener('click', function (event) {
             event.stopPropagation()
         } )
+
+        // đóng mở mobile menu
+        var header = document.getElementById("header");
+        var headerHeight = header.clientHeight;
+        var mobileMenu = document.getElementById("mobile-menu");
+        mobileMenu.onclick = function() {
+            var isClose = header.clientHeight === headerHeight;
+            if (isClose) {
+                header.style.height = "auto";
+            } else {
+                header.style.height = null;
+            }
+        };
+
+        // tự động đóng khi chọn menu
+        var menuItems =document.querySelectorAll('#nav li a[href*="#"]')
+        for (var i =0; i<menuItems.length;i++) {
+            var menuItem = menuItems[i];
+            menuItem.onclick = function() {
+                header.style.height = null;
+            };
+        }
     </script>
 </body>
 </html>

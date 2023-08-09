@@ -94,6 +94,7 @@ Tren xuong duoi
     height: 46px;
     background-color: black;
     z-index: 1;
+    overflow: hidden;
 }
 
 #nav {
@@ -151,10 +152,18 @@ Tren xuong duoi
     font-size: 14px;
 }
 
-#header .search-btn {
+#header .search-btn,
+#header .mobile-menu-btn {
     float: right;
     padding: 0 21px;
-   
+}
+
+#header .mobile-menu-btn:hover {
+    background-color: #ccc ;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
 }
 
 #header .search-btn:hover {
@@ -162,6 +171,7 @@ Tren xuong duoi
     background-color:#f44336 ;
 }
 
+#header .menu-icon,
 #header .search-icon {
     color: #fff;
     font-size: 20px;
