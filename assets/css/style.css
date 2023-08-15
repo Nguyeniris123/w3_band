@@ -179,7 +179,7 @@ Tren xuong duoi
 }
 
 #slider {
-    background-image: url("/assets/img/slider/slider1.jpg");
+    background-image: url("../assets/img/slider/slider1.jpg");
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
