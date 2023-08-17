@@ -74,6 +74,7 @@ Tren xuong duoi
 .col-half {
     width: 50%;
 }
+
 .col-third {
     width: 33.33333%;
 }
@@ -86,6 +87,10 @@ Tren xuong duoi
     margin-top: 16px !important;
 }
 
+.mt-32 {
+    margin-top: 32px !important;
+}
+
 #header {
     position: fixed;
     top: 0;
@@ -94,7 +99,6 @@ Tren xuong duoi
     height: 46px;
     background-color: black;
     z-index: 1;
-    overflow: hidden;
 }
 
 #nav {
@@ -150,6 +154,13 @@ Tren xuong duoi
 
 #nav .nav-arrow-down {
     font-size: 14px;
+}
+
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
 }
 
 #header .search-btn,
@@ -241,8 +252,7 @@ Tren xuong duoi
 }
 
 #content .member-list {
-    margin-top: 48px;
-
+    margin-top: 32px;
 }
 
 #content .member-name {
@@ -294,7 +304,7 @@ Tren xuong duoi
 }
 
 .place-list {
-    margin-top: 32px;
+    margin-top: 16px;
    
 }
 
