@@ -42,6 +42,7 @@ Tren xuong duoi
     display: inline-block;
     margin-top: 15px;
     border: none;
+    text-align: center;
 }
 
 .btn:hover {

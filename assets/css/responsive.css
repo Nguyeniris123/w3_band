@@ -1,11 +1,12 @@
 /* mobile */
 @media (max-width: 740px) {
-    .s-col-full {
+    .s-col-full,
+    .s-full-width {
         width: 100% !important;
     }
 
     .s-mt-8 {
-        margin-top: 16px !important;
+        margin-top: 8px !important;
     }
 
     #nav {
