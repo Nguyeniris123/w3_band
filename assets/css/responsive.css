@@ -1,5 +1,5 @@
 /* mobile */
-@media (max-width: 740px) {
+@media (max-width: 46.1875em) {
     .s-col-full,
     .s-full-width {
         width: 100% !important;
@@ -53,16 +53,54 @@
     }
 
     .contact-form {
-        margin-top: 16px;
+        margin-top: 32px;
     }
 }
 
+/* tablet- mobile */
+@media (max-width: 63.9375em) {
+    .btn {
+        padding: 15px 16px;
+    }
+
+    .contact-form .form-control {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .contact-submit-btn {
+        font-size: 16px;
+    }
+
+    .contact-info {
+        line-height: 2.0;
+    }
+
+    .socials-list {
+        font-size: 48px;
+    }
+
+    #footer .socials-list a {
+        margin: 0 8px;
+    }
+
+    #footer .copyright a {
+        padding: 12px 0;
+        display: inline-block;
+    }
+
+    #nav .subnav a {
+        padding: 5px 12px;
+    }
+ 
+}
+
 /* tablet */
-@media (min-width: 740px) and (max-width: 1023px) {
+@media (min-width: 46.2500em) and (max-width: 63.9375em) {
     
 }
 
 /* pc */
-@media (min-width: 1024px) {
+@media (min-width: 64.0000em) {
 
 }
